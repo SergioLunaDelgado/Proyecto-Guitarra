@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Lukather",
+        "descript": "La guitarra Lukather es un modelo versátil que se adapta a diferentes géneros musicales. Con un cuerpo sólido y pastillas de alta calidad, esta guitarra te permitirá expresar tu creatividad musical al máximo.",
+        "price": 8500
+    },
+    {
+        "id": 2,
+        "name": "SRV",
+        "descript": "La guitarra Srv es una leyenda en sí misma. Inspirada en el gran Stevie Ray Vaughan, esta guitarra te ofrece un sonido blues-rock auténtico y una sensación inigualable.",
+        "price": 12000
+    },
+    {
+        "id": 3,
+        "name": "Borland",
+        "descript": "La guitarra Borland es perfecta para los amantes del metal y el rock alternativo. Con su diseño único y poderoso, te destacarás en el escenario.",
+        "price": 15000
+    },
+    {
+        "id": 4,
+        "name": "VAI",
+        "descript": "La guitarra Vai es una obra maestra de la innovación y la velocidad. Steve Vai la diseñó para los músicos que buscan un rendimiento de alto nivel.",
+        "price": 10000
+    },
+    {
+        "id": 5,
+        "name": "Thompson",
+        "descript": "La guitarra Thompson es una elección clásica para los amantes del rock. Su tono cálido y su construcción sólida la hacen ideal para cualquier estilo.",
+        "price": 7000
+    },
+    {
+        "id": 6,
+        "name": "White",
+        "descript": "La guitarra White es un sueño hecho realidad para los fanáticos de la guitarra Eléctrica. Su diseño elegante y su potente sonido te dejarán sin aliento.",
+        "price": 18000
+    },
+    {
+        "id": 7,
+        "name": "Colbain",
+        "descript": "La guitarra Colbain es una elección icónica para los amantes del grunge. Su apariencia vintage y su sonido distintivo te llevarán de vuelta a los años 90.",
+        "price": 9000
+    },
+    {
+        "id": 8,
+        "name": "Dale",
+        "descript": "La guitarra Dale es una joya para los surfistas musicales. Su sonido soleado y su diseño retro te transportarán a las playas de California.",
+        "price": 13000
+    },
+    {
+        "id": 9,
+        "name": "Krieger",
+        "descript": "La guitarra Krieger es una máquina de riffs y solos. Inspirada en el legendario Robby Krieger, esta guitarra te permitirá tocar como un auténtico rockero.",
+        "price": 11000
+    },
+    {
+        "id": 10,
+        "name": "Campbell",
+        "descript": "La guitarra Campbell es una elección elegante para los músicos de blues. Su tono suave y su estilo clásico te llevarán a las raíces del blues.",
+        "price": 6500
+    },
+    {
+        "id": 11,
+        "name": "Reed",
+        "descript": "La guitarra Reed es un tributo a Lou Reed y su legado en el rock alternativo. Su sonido distintivo y su estilo atemporal la hacen imprescindible para los fans.",
+        "price": 14000
+    },
+    {
+        "id": 12,
+        "name": "Hazel",
+        "descript": "La guitarra Hazel es una joya para los amantes de la música indie. Su versatilidad y su diseño único te inspirarán a crear música auténtica.",
+        "price": 16000
+    }
+]

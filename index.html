@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="shortcut icon" href="/build/img/icon.svg" type="image/x-icon">
+    <meta name="theme-color" content="#e99401">
 </head>
 
 <body>
@@ -19,22 +21,23 @@
                 <div class="col-8 col-md-3">
                     <a href="/"><img src="/build/img/logo.svg" alt="Logo" class="img-fluid"></a>
                 </div>
-                <nav
-                    class="col-md-6 d-flex flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
-                    <a href="/" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Inicio</a>
-                    <a href="nosotros.html" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Nosotros</a>
-                    <a href="blog.html" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Blog</a>
-                    <a href="tienda.html" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Tienda</a>
+                <nav class="col-md-6 d-flex gap-1 flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
+                    <a href="/" class="enlace">Inicio</a>
+                    <a href="nosotros.html" class="enlace">Nosotros</a>
+                    <a href="blog.html" class="enlace">Blog</a>
+                    <a href="guitarras.html" class="enlace">Guitarras</a>
+                    <a href="carrito.html">
+                        <img src="build/img/cart.svg" class="carrito" alt="Carrito" width="64" height="64">
+                    </a>
                 </nav>
             </div>
+
             <div class="row mt-5">
                 <div class="col-md-6 text-center text-md-start pt-5">
                     <h1 class="display-2 fw-bold">Modelo VAI</h1>
-                    <p class="mt-5 fs-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                        enim nostrum harum? Eius odit, cum beatae eum nobis expedita maiores! Dolor corrupti atque
-                        incidunt voluptatibus quibusdam. Placeat corporis exercitationem quae!</p>
-                    <p class="text-primary fs-1 fw-black">$399</p>
-                    <a href="#" class="btn fs-4 bg-primary text-white py-1 px-2">Ver Producto</a>
+                    <p class="mt-5 fs-5 text-white">La guitarra Vai es una obra maestra de la innovación y la velocidad. Steve Vai la diseñó para los músicos que buscan un rendimiento de alto nivel.</p>
+                    <p class="text-primary fs-1 fw-black">$10,000</p>
+                    <a href="#" class="btn fs-3 text-uppercase bg-primary text-white py-1 px-2">Ver Producto</a>
                 </div>
             </div>
         </div>
@@ -48,213 +51,8 @@
 
     <main class="container mt-5">
         <h2 class="text-center fs-1">Nuestra Colección</h2>
-
-        <div class="row mt-5">
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_01.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_01.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_01.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Lukather</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_02.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_02.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_02.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">SRV</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_03.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_03.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_03.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Borland</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_04.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_04.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_04.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Vai</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_05.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_05.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_05.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Thompson</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_06.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_06.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_06.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">White</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_07.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_07.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_07.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Colbain</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_08.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_08.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_08.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Dale</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_09.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_09.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_09.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Krieger</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_10.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_10.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_10.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Campbell</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_11.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_11.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_11.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Reed</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-                <div class="col-4">
-                    <picture>
-                        <source srcset="/build/img/guitarra_12.avif" type="image/avif">
-                        <source srcset="/build/img/guitarra_12.webp" type="image/webp">
-                        <img loading="lazy" src="/build/img/guitarra_12.jpg" alt="Imagen Guitrarra" class="img-fluid">
-                    </picture>
-                </div>
-                <div class="col-8">
-                    <h3 class="text-black fs-4 fw-bold text-uppercase">Hazel</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque rem, a, aliquam blanditiis
-                        alias repudiandae consequuntur suscipit inventore voluptate repellendus ratione dignissimos
-                        delectus dolore fuga veniam cupiditate, sed optio!</p>
-                        <p class="fw-black text-primary fs-3">$299</p>
-                        <a href="producto.html" class="btn btn-dark d-block py-1 text-uppercase fw-black">Ver Producto</a>
-                </div>
-            </div>
-        </div>
+        <!-- Fetch JS -->
+        <div id="guitars" class="row mt-5"></div>
     </main>
 
     <section class="container-fluid mt-5 cursos p-5">
@@ -336,15 +134,17 @@
 
     <footer class="bg-dark mt-5 py-5">
         <div class="container d-md-flex justify-content-md-between">
-            <nav class="d-flex flex-column flex-md-row align-items-center gap-1">
+            <nav class="d-flex flex-column flex-md-row align-items-center gap-2">
                 <a href="/" class="text-white fs-5">Inicio</a>
                 <a href="nosotros.html" class="text-white fs-5">Nosotros</a>
                 <a href="blog.html" class="text-white fs-5">Blog</a>
-                <a href="tienda.html" class="text-white fs-5">Tienda</a>
+                <a href="guitarras.html" class="text-white fs-5">Guitarras</a>
             </nav>
             <p class="text-white text-center fs-5 mt-4 m-md-0">Todos los derechos Reservados</p>
         </div>
     </footer>
+
+    <script src="build/js/bundle.min.js"></script>
 </body>
 
 </html>

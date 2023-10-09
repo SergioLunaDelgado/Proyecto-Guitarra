@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="shortcut icon" href="/build/img/icon.svg" type="image/x-icon">
+    <meta name="theme-color" content="#e99401">
 </head>
 
 <body>
@@ -19,12 +21,14 @@
                 <div class="col-8 col-md-3">
                     <a href="/"><img src="/build/img/logo.svg" alt="Logo" class="img-fluid"></a>
                 </div>
-                <nav
-                    class="col-md-6 d-flex flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
-                    <a href="/" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Inicio</a>
-                    <a href="nosotros.html" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Nosotros</a>
-                    <a href="blog.html" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Blog</a>
-                    <a href="tienda.html" class="d-block px-2 py-1 fs-6 fw-bold text-uppercase">Tienda</a>
+                <nav class="col-md-6 d-flex gap-1 flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
+                    <a href="/" class="enlace">Inicio</a>
+                    <a href="nosotros.html" class="enlace">Nosotros</a>
+                    <a href="blog.html" class="enlace">Blog</a>
+                    <a href="guitarras.html" class="enlace">Guitarras</a>
+                    <a href="carrito.html">
+                        <img src="build/img/cart.svg" class="carrito" alt="Carrito" width="64" height="64">
+                    </a>
                 </nav>
             </div>
         </div>
@@ -32,7 +36,7 @@
 
     <section class="container mt-5">
         <h2 class="text-center">Nuestro Blog</h2>
-        <div class="row mt-3">
+        <div class="row g-2 mt-3">
             <div class="col-md-6 col-lg-4">
                 <div class="card p-1 mb-2 mb-lg-0">
                     <picture>
@@ -110,11 +114,11 @@
 
     <footer class="bg-dark mt-5 py-5">
         <div class="container d-md-flex justify-content-md-between">
-            <nav class="d-flex flex-column flex-md-row align-items-center gap-1">
+            <nav class="d-flex flex-column flex-md-row align-items-center gap-2">
                 <a href="/" class="text-white fs-5">Inicio</a>
                 <a href="nosotros.html" class="text-white fs-5">Nosotros</a>
                 <a href="blog.html" class="text-white fs-5">Blog</a>
-                <a href="tienda.html" class="text-white fs-5">Tienda</a>
+                <a href="guitarras.html" class="text-white fs-5">Guitarras</a>
             </nav>
             <p class="text-white text-center fs-5 mt-4 m-md-0">Todos los derechos Reservados</p>
         </div>
