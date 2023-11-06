@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuitarLA - Carrito</title>
+    <title>GuitarDC - Carrito</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="/build/css/app.min.css">
     <link rel="shortcut icon" href="/build/img/icon.svg" type="image/x-icon">
-    <meta name="theme-color" content="#e99401">
+    <meta name="theme-color" content="#00FFE9">
 </head>
 
 <body>
@@ -24,11 +24,11 @@
                 <nav
                     class="col-md-6 d-flex gap-1 flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
                     <a href="/" class="enlace">Inicio</a>
-                    <a href="nosotros.html" class="enlace">Nosotros</a>
-                    <a href="blog.html" class="enlace">Blog</a>
-                    <a href="guitarras.html" class="enlace">Guitarras</a>
-                    <a href="carrito.html">
-                        <img src="build/img/cart.svg" class="carrito" alt="Carrito" width="64" height="64">
+                    <a href="/nosotros.html" class="enlace">Nosotros</a>
+                    <a href="/blog.html" class="enlace">Blog</a>
+                    <a href="/guitarras.html" class="enlace">Guitarras</a>
+                    <a href="/carrito.html">
+                        <img src="/build/img/cart.svg" class="carrito" alt="Carrito" width="64" height="64">
                     </a>
                 </nav>
             </div>
@@ -37,10 +37,14 @@
 
     <main id="carritoLleno" class="d-none container mt-5">
         <h2 class="text-center imprimir-ocultar">Carrito de compra</h2>
-        <h1 class="text-center fs-1 imprimir-mostrar"><span class="text-dark">Guitar</span>LA</h1>
-        <h2 class="text-center fs-2 text-dark imprimir-mostrar">Instrumentos - Cursos</h2>
-        <div class="d-flex justify-content-end mt-3">
-            <h3 class="text-primary fs-5 imprimir-mostrar">
+        <h1 class="text-center fs-1 imprimir-mostrar"><span class="text-dark">Guitar</span>DC</h1>
+        <h2 class="text-center fs-2 text-dark imprimir-mostrar">Instrumentos</h2>
+        <div class="d-flex justify-content-between mt-3">
+            <div class="imprimir-mostrar">
+                <h3 class="text-primary fs-5">Información del cliente</h3>
+                <p id="form_info"></p>
+            </div>
+            <h3 class="imprimir-mostrar text-primary fs-5">
                 Folio:
                 <span id="folio" class="fw-light text-dark ps-1"></span>
             </h3>
@@ -61,13 +65,44 @@
             </table>
         </div>
         <div class="imprimir-ocultar">
-            <button type="button" id="comprar" class="btn fs-6 bg-primary text-uppercase text-white py-1 px-2 mt-5">Recoger en tienda</button>
+            <!-- btn modal -->
+            <button type="button" class="btn fs-6 bg-primary text-uppercase text-white py-1 px-2 mt-5"
+                data-bs-toggle="modal" data-bs-target="#datos">Continuar</button>
         </div>
         <div class="alert alert-warning p-2 mt-5 imprimir-mostrar" role="alert">
             En base a lo seleccionado en este carrito de compras, muestra este recibo en el mostrador para pagar y
             recoger el o los instrumentos seleccionados.
         </div>
     </main>
+
+    <!-- modal -->
+    <div class="modal fade" id="datos" tabindex="-1" aria-labelledby="datosLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="comprar" class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="datosLabel">Ingresa tus datos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="fullname" class="col-form-label">Nombre completo:</label>
+                        <input type="text" id="form_fullname" class="form-control" id="fullname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Correo:</label>
+                        <input type="email" id="form_email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="col-form-label">Celular:</label>
+                        <input type="tel" id="form_phone" class="form-control" id="phone" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary text-white">Recoger en tienda</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <section id="carritoVacio" class="container mt-5">
         <h2 class="text-center">El carrito de compras esta vació</h2>
@@ -85,15 +120,27 @@
         <div class="container d-md-flex justify-content-md-between">
             <nav class="d-flex flex-column flex-md-row align-items-center gap-2">
                 <a href="/" class="text-white fs-5">Inicio</a>
-                <a href="nosotros.html" class="text-white fs-5">Nosotros</a>
-                <a href="blog.html" class="text-white fs-5">Blog</a>
-                <a href="guitarras.html" class="text-white fs-5">Guitarras</a>
+                <a href="/nosotros.html" class="text-white fs-5">Nosotros</a>
+                <a href="/blog.html" class="text-white fs-5">Blog</a>
+                <a href="/guitarras.html" class="text-white fs-5">Guitarras</a>
             </nav>
-            <p class="text-white text-center fs-5 mt-4 m-md-0">Todos los derechos Reservados</p>
+            <!-- <p class="text-white text-center fs-5 mt-4 m-md-0">Todos los derechos Reservados</p> -->
+            <div class="d-flex justify-content-center">
+                <a href="https://instagram.com/guitarras_dc?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" target="_blank"
+                    rel="noopener noreferrer" class="fs-5 mt-4 m-md-0">
+                    Síguenos en Instagram
+                    <img src="/build/img/instagram.svg" alt="Siguenos en nuestro instagram" width="64" height="64">
+                </a>
+            </div>
         </div>
     </footer>
 
     <script src="build/js/bundle.min.js"></script>
+    <!-- <script src="build/js/modal.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+        integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
 </body>
 

@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuitarLA - Blog</title>
+    <title>GuitarDC - Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.min.css">
+    <link rel="stylesheet" href="/build/css/app.min.css">
     <link rel="shortcut icon" href="/build/img/icon.svg" type="image/x-icon">
-    <meta name="theme-color" content="#e99401">
+    <meta name="theme-color" content="#00FFE9">
 </head>
 
 <body>
@@ -21,13 +21,14 @@
                 <div class="col-8 col-md-3">
                     <a href="/"><img src="/build/img/logo.svg" alt="Logo" class="img-fluid"></a>
                 </div>
-                <nav class="col-md-6 d-flex gap-1 flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
+                <nav
+                    class="col-md-6 d-flex gap-1 flex-column flex-md-row align-items-center justify-content-md-end mt-3 mt-md-0 navegacion">
                     <a href="/" class="enlace">Inicio</a>
                     <a href="nosotros.html" class="enlace">Nosotros</a>
                     <a href="blog.html" class="enlace">Blog</a>
                     <a href="guitarras.html" class="enlace">Guitarras</a>
                     <a href="carrito.html">
-                        <img src="build/img/cart.svg" class="carrito" alt="Carrito" width="64" height="64">
+                        <img src="/build/img/cart.svg" class="carrito" alt="Carrito" width="64" height="64">
                     </a>
                 </nav>
             </div>
@@ -37,7 +38,7 @@
     <section class="container mt-5">
         <h2 class="text-center">Nuestro Blog</h2>
         <div class="row g-2 mt-3">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
                 <div class="card p-1 mb-2 mb-lg-0">
                     <picture>
                         <source srcset="/build/img/blog_1.avif" type="image/avif">
@@ -46,16 +47,15 @@
                     </picture>
                     <div class="card-body">
                         <h3 class="text-black fw-normal fs-4">Como elegir tu primer guitarra</h3>
-                        <p class="text-primary">13 de Octubre del 2023</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sequi eos tempore magni
-                            quia iure perferendis natus placeat sunt eius impedit cumque ratione vero rem ad, voluptates
-                            illo debitis unde?</p>
-                        <a href="entrada.html" class="btn btn-primary py-1 text-uppercase text-white d-block">Leer
-                            Entrada</a>
+                        <p class="text-primary">5 de Noviembre del 2023</p>
+                        <p>Hay muchas opciones disponibles, y tomar la decisión correcta es crucial para asegurarte de
+                            que disfrutes tocando y aprendas de manera efectiva. </p>
+                        <a href="blog/como-eligir-tu-primera-guitarra.html"
+                            class="btn btn-primary py-1 text-uppercase text-white d-block">Leer Entrada</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <!-- <div class="col-md-6 col-lg-4">
                 <div class="card p-1 mb-2 mb-lg-0">
                     <picture>
                         <source srcset="/build/img/blog_2.avif" type="image/avif">
@@ -108,6 +108,16 @@
                             Entrada</a>
                     </div>
                 </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2 class="text-center">Aprende de los mejores instructores</h2>
+        <div class="row g-2 mt-3">
+            <!-- Copiar el siguiente div, despues de iframe borrar width height y colocar esto class="w-100" height="315" -->
+            <div class="col-md-6">
+                <iframe class="w-100" height="315" src="https://www.youtube.com/embed/OvYrgWf0Zk4?si=ObCBwd3QM3tdpOUq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -116,11 +126,18 @@
         <div class="container d-md-flex justify-content-md-between">
             <nav class="d-flex flex-column flex-md-row align-items-center gap-2">
                 <a href="/" class="text-white fs-5">Inicio</a>
-                <a href="nosotros.html" class="text-white fs-5">Nosotros</a>
-                <a href="blog.html" class="text-white fs-5">Blog</a>
-                <a href="guitarras.html" class="text-white fs-5">Guitarras</a>
+                <a href="/nosotros.html" class="text-white fs-5">Nosotros</a>
+                <a href="/blog.html" class="text-white fs-5">Blog</a>
+                <a href="/guitarras.html" class="text-white fs-5">Guitarras</a>
             </nav>
-            <p class="text-white text-center fs-5 mt-4 m-md-0">Todos los derechos Reservados</p>
+            <!-- <p class="text-white text-center fs-5 mt-4 m-md-0">Todos los derechos Reservados</p> -->
+            <div class="d-flex justify-content-center">
+                <a href="https://instagram.com/guitarras_dc?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" target="_blank"
+                    rel="noopener noreferrer" class="fs-5 mt-4 m-md-0">
+                    Síguenos en Instagram
+                    <img src="/build/img/instagram.svg" alt="Siguenos en nuestro instagram" width="64" height="64">
+                </a>
+            </div>
         </div>
     </footer>
 </body>
